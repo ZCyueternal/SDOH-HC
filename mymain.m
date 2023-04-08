@@ -20,7 +20,7 @@ elseif strcmp(set,'NUS-WIDE')
     I_tr = I_tr(1:40000,:);
     L_tr = L_tr(1:40000,:);
 elseif strcmp(set,'CIFAR10')
-    load('../Datasets/cifar10-zcyucut-follow-FOH.mat');
+    load('../Datasets/cifar10-cut-follow-FOH.mat');
     L_tr = L_tr_onehot;   L_te = L_te_onehot;
 elseif strcmp(set,'Places')
 %     load('../Datasets/Places205_AlexNet_fc7_PCA128');
