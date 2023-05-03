@@ -6,26 +6,26 @@ nbits_set=[16 32 64 96 128];
 %% load dataset
 fprintf('loading dataset...\n')
 
-set = 'CIFAR10';
+% set = 'CIFAR10';
 % set = 'MIRFlickr';
-% set = 'NUS-WIDE';
+set = 'NUS-WIDE';
 % set = 'Places';
 
 if strcmp(set,'MIRFlickr')
-    load('../Datasets/MIRFLICKR.mat');
+    load('../Datasets4SelectParam/MIRFLICKR.mat');
     I_tr = I_tr(1:18015,:);
     L_tr = L_tr(1:18015,:);
 elseif strcmp(set,'NUS-WIDE')
-    load('../Datasets/NUSWIDE10.mat');
+    load('../Datasets4SelectParam/NUSWIDE10.mat');
     I_tr = I_tr(1:40000,:);
     L_tr = L_tr(1:40000,:);
 elseif strcmp(set,'CIFAR10')
-    load('../Datasets/cifar10-cut-follow-FOH.mat');
+    load('../Datasets4SelectParam/cifar10-cut-follow-FOH.mat');
     L_tr = L_tr_onehot;   L_te = L_te_onehot;
 elseif strcmp(set,'Places')
-%     load('../Datasets/Places205_AlexNet_fc7_PCA128');
+%     load('../../Datasets/supervised/Places205_AlexNet_fc7_PCA128');
 %     L_tr = L_tr_onehot;   L_te = L_te_onehot;
-    opt.dirs.data = '../Datasets/';
+    opt.dirs.data = '../data_ok/';
     DS = Datasets.places(opt,0);
     
     trainCNN = DS.Xtrain;
@@ -86,6 +86,7 @@ elseif strcmp(set,'CIFAR10')
 
 end
 
+
 param.datasets = set;
 
 param.paramiter = 10;
@@ -138,3 +139,5 @@ for bit=1:length(nbits_set)
 [ MAP(bit,:),training_time(bit,:)] = train_twostep(I_tr,L_tr,param,I_te,L_te,anchor,Binit,Vinit,Pinit,Sinit,h);
 
 end 
+
+
