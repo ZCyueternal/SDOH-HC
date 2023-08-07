@@ -86,7 +86,7 @@ for round = 1:floor(n/chunk) % 1:16000/2000=1:8
         L_minus_BY = L_tr(e_id:n_id,:)-B(e_id:n_id,:)*Y';
         diff = L_minus_BY.^2;
         for j = 1:nsample %1:2000
-            normdiff(j) = norm(diff(j,:),2); % 2-norm of (Y) 1*2000
+            normcdiff(j) = norm(diff(j,:),2); % 2-norm of (Y) 1*2000
         end
         [~,index] = sort(normdiff(:,1:nsample)); % get the index  (ascending,from low to high)
         % myindex floor(n/chunk)*1000
@@ -137,7 +137,7 @@ for round = 1:floor(n/chunk) % 1:16000/2000=1:8
             V(e_id:n_id,:) = sqrt(nsample)*[PP P_]*[Q Q_]';
             
             % update Y arrow
-            G = sita*S'*Y + yita*L_tr(e_id:n_id,:)'*B(e_id:n_id,:)+epsilon*h; % G:c*r
+            G = sita*S'*Y + yita*L_tr(e_id:n_id,:)'*B(e_id:n_id,:)+epsilon*h*(1./nbits); % G:c*r
             for k=1:3
                 for place=1:nbits
                     bit=1:nbits;

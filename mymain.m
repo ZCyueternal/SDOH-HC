@@ -26,8 +26,8 @@ elseif strcmp(set,'Places')
 %     load('../../Datasets/supervised/Places205_AlexNet_fc7_PCA128');
 %     L_tr = L_tr_onehot;   L_te = L_te_onehot;
     opt.dirs.data = '../data_ok/';
-    DS = Datasets.places(opt,0);
-    
+    DS = datasets.places(opt,0);
+   
     trainCNN = DS.Xtrain;
     testCNN = DS.Xtest;
     trainLabel = DS.Ytrain;
