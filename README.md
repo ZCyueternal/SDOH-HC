@@ -45,4 +45,4 @@ year = {2023}
 ```
 
 ## Contact
-If you have any questions, feel free to contact [us](zhangchongyu22@gmail.com).
+If you have any questions, feel free to contact [us](mailto:zhangchongyu22@gmail.com?subject=[Problems%20about%20SDOH-HC]).
