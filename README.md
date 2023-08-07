@@ -3,13 +3,14 @@
 
 ## Introduction
 ### 0. About the paper
-This repo is the source code for the paper "**Self-Distillation Dual-Memory Online Hashing with Hash Centers for Streaming Data Retrieval**" on ACM International Conference on Multimedia (**ACM MM**), 2023 by Chong-Yu Zhang, Xin Luo, Yu-Wei Zhan, Peng-Fei Zhang, Zhen-Duo Chen, Yongxin Wang, Xun Yang, and Xin-Shun Xu. If you have any questions about the source code, please contact: zhangchongyu22@gmail.com
+This repo is the source code for the paper [**Self-Distillation Dual-Memory Online Hashing with Hash Centers for Streaming Data Retrieval**](https://github.com/ZCyueternal/SDOH-HC) on ACM International Conference on Multimedia (**ACM MM**), 2023 
+<br>by [Chong-Yu Zhang](https://scholar.google.com.hk/citations?hl=en&user=OsbUzCMAAAAJ), [Xin Luo](https://scholar.google.com.hk/citations?hl=en&user=ZaCsoy0AAAAJ), [Yu-Wei Zhan](https://scholar.google.com.hk/citations?user=iM_-4-sAAAAJ&hl=en&oi=sra), [Peng-Fei Zhang](https://scholar.google.com.hk/citations?hl=en&user=KTnEPf8AAAAJ), [Zhen-Duo Chen](https://scholar.google.com.hk/citations?user=v28-0D0AAAAJ&hl=en&oi=sra), [Yongxin Wang](https://scholar.google.com.hk/citations?user=0SnREAQAAAAJ&hl=en&oi=sra), [Xun Yang](https://scholar.google.com.hk/citations?user=ro8lzsUAAAAJ&hl=en&oi=ao), and [Xin-Shun Xu](https://scholar.google.com.hk/citations?user=ICzwFaIAAAAJ&hl=en&oi=ao). 
 
 ### 1. Running Environment
 ```matlab
 Matlab
 ```
-
+## :rocket: News
 ### 2. Datasets
 We use three datasets to perform our experiments, i.e., CIFAR-10, MIRFLICKR-25K, and NUS-WIDE datasets.
 
@@ -44,3 +45,6 @@ booktitle = {Proceedings of the ACM International Conference on Multimedia},
 year = {2023}
 }
 ```
+
+## Contact
+If you have any questions, feel free to contact [us](zhangchongyu22@gmail.com).
