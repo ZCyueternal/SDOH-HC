@@ -46,3 +46,9 @@ year = {2023}
 
 ## Contact
 If you have any questions, feel free to contact [us](mailto:zhangchongyu22@gmail.com?subject=[Github%20Problems%20SDOH-HC]).
+
+
+## Stars
+**Stargazers**
+
+[![Stargazers repo roster for @ZCyueternal/SDOH-HC](https://reporoster.com/stars/ZCyueternal/SDOH-HC)](https://github.com/ZCyueternal/SDOH-HC/stargazers)
