@@ -39,7 +39,8 @@ If you find our work is useful for your research, please consider citing:
 @inProceedings{zhang2023self,
 author = {Zhang, Chong-Yu and Luo, Xin and Zhan, Yu-Wei and Zhang, Peng-Fei and Chen, Zhen-Duo and Wang Yongxin and Yang, Xun and Xu, Xin-Shun},
 title = {Self-distillation dual-memory online hashing with hash centers for streaming data retrieval},
-booktitle = {Proceedings of the ACM International Conference on Multimedia},
+booktitle = {Proceedings of the 31st ACM International Conference on Multimedia},
+pages={6340--6349},
 year = {2023}
 }
 ```
